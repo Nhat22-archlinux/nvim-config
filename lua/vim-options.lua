@@ -15,4 +15,7 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
+-- Số dòng
+vim.opt.number = true
+vim.opt.relativenumber = true
 
