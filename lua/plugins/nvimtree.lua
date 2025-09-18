@@ -40,5 +40,6 @@ return {
 
     -- Chia ngang
     vim.keymap.set("n", "M", ":sp<CR>", { noremap = true, silent = true, desc = "Horizontal split" })
+    vim.keymap.set("n", "<leader>t", ":belowright 10sp | terminal<CR>", { noremap = true, silent = true })
   end,
 }
