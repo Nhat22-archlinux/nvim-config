@@ -1,6 +1,7 @@
 return {
   {
   "Exafunction/windsurf.nvim",
+  enabled = false, -- tắt plugin 
   dependencies = {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp",
