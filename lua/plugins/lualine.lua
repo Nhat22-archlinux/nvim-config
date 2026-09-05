@@ -29,7 +29,19 @@ return {
         },
         lualine_b = { "branch", "diff" },
         lualine_c = { { "filename", path = 1 } },
-        lualine_x = { "encoding", "fileformat", "filetype" },
+        lualine_x = {
+          {
+            "diagnostics",
+            sources = { "nvim_diagnostic" },
+            sections = { "error", "warn", "info", "hint" },
+            symbols = { error = "E:", warn = " W:", info = " I:", hint = " H:" },
+            colored = true,
+            update_in_insert = false,
+          },
+          "encoding",
+          "fileformat",
+          "filetype",
+        },
         lualine_y = { "progress" },
         lualine_z = { "location" },
       },
@@ -37,4 +49,3 @@ return {
     vim.o.showmode = false -- ẩn -- INSERT -- mặc định
   end,
 }
-

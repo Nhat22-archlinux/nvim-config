@@ -18,6 +18,9 @@ return {
         "ts_ls",
         "solargraph",
         "html",
+        "jsonls",
+        "yamlls",
+        "bashls",
         "lua_ls",
         "pyright",
         "clangd",
@@ -44,6 +47,9 @@ return {
       vim.lsp.config("ts_ls", { capabilities = capabilities })
       vim.lsp.config("solargraph", { capabilities = capabilities })
       vim.lsp.config("html", { capabilities = capabilities })
+      vim.lsp.config("jsonls", { capabilities = capabilities })
+      vim.lsp.config("yamlls", { capabilities = capabilities })
+      vim.lsp.config("bashls", { capabilities = capabilities })
       -- thêm texlab ở đây
       vim.lsp.config("texlab", {
         capabilities = capabilities,
@@ -72,6 +78,9 @@ return {
         "ts_ls",
         "solargraph",
         "html",
+        "jsonls",
+        "yamlls",
+        "bashls",
         "lua_ls",
         "pyright",
         "clangd",

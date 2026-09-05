@@ -22,3 +22,7 @@ local config = {
 }
 
 vim.diagnostic.config(config)
+
+vim.keymap.set("n", "<leader>e", function()
+	vim.diagnostic.open_float(nil, { focus = false })
+end, { desc = "Show line diagnostic" })
